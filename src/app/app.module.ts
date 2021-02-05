@@ -16,7 +16,9 @@ import { FirstViewComponent } from './first-view/first-view.component';
 
 const routes: Routes = [
   { path: 'cotizar', component: SecondViewComponent },
-  { path: '', component: FirstViewComponent, pathMatch: 'full' }
+  { path: '', component: FirstViewComponent, pathMatch: 'full' },
+  { path: 'home', component: FirstViewComponent, pathMatch: 'full'},
+
 ];
 
 @NgModule({
