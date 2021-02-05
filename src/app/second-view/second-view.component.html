@@ -1,12 +1,14 @@
 <div class="">
     <div class="my-3">
-        <h1 class="text-5xl">¡Pide una cotización!</h1>
-        <a [routerLink]="['/home']"><img class="w-8 bg-black rounded-full border border-grey-900 m-3" src="assets/images/vector.png" alt="cerrar"/></a>
+        <h1 class="text-6xl inline">¡Pide una cotización!</h1>
+        <img class="w-8 bg-black rounded-full border border-grey-900 m-3 inline" src="assets/images/vector.png" alt="cerrar" [routerLink]="['/home']"/>
     </div>
     <div class="bg-red-100 text-center">
-        <p>¿Necesitas una caja a tu medida?</p>
-        <p class="text-red-500">Pedidos personalizados a partir de las 500 unidades</p>
-        <button class="bg-red-500 py-3 px-5 m-5 rounded-lg text-white ">¡Personaliza!</button>
+        <div class="inline-block p-5 text-left text-2xl">
+            <p>¿Necesitas una caja a tu medida?</p>
+            <p class="text-red-500">Pedidos personalizados a partir de las 500 unidades</p>
+        </div>
+        <button class="bg-red-500 py-3 px-5 m-10 rounded-lg text-white inline-block ">¡Personaliza!</button>
     </div>
 </div>
 <div>
