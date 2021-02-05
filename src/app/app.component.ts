@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'retro-esedor-angular';
+  title = 'reto-esedor-angular';
+  // template:boolean = false;
+  ocultar:string = '';
 }
