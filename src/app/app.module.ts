@@ -13,6 +13,7 @@ import { ImpressionComponent } from './impression/impression.component';
 import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
 import { FirstViewComponent } from './first-view/first-view.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: 'cotizar', component: SecondViewComponent },
@@ -36,7 +37,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
