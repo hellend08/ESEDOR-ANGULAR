@@ -14,13 +14,21 @@ import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
 import { FirstViewComponent } from './first-view/first-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+
+import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 const routes: Routes = [
   { path: 'cotizar', component: SecondViewComponent },
-  { path: '', component: FirstViewComponent, pathMatch: 'full' },
-  { path: 'home', component: FirstViewComponent, pathMatch: 'full'},
-
+  { path: '**', component: HomeComponent, pathMatch: 'full' },
 ];
+
 
 @NgModule({
   declarations: [
@@ -33,12 +41,20 @@ const routes: Routes = [
     ImpressionComponent,
     DesignComponent,
     ContactComponent,
-    FirstViewComponent
+    FirstViewComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

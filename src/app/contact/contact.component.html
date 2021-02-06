@@ -1,10 +1,43 @@
 <div class="mx-20 my-10">
-    <h2 class="text-2xl"><span class="text-red-500 rounded-full border border-red-500 mx-4 px-2">6</span>Contactanos</h2>
+  <h2 class="text-2xl">
+    <span class="text-red-500 rounded-full border border-red-500 mx-4 px-2">6</span>Contactanos
+  </h2>
+  <div class="ml-8 my-10 pb-40">
     <p>Solicitar cotización</p>
-    <input type="text"/>
-    <input type="email" name="" id=""/>
-    <input type="text"/>
-    <input type="number" name="" id=""/>
-    <input type="text"/>
-    <button class="bg-red-500 py-3 px-12 rounded-lg text-white">ENVIAR SOLICITUD</button>
+    <div>
+      <p class="inline">
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre*</mat-label>
+          <input matInput placeholder="Ingresa tu nombre">
+        </mat-form-field>
+      </p>
+      <div class="example-container inline ml-5">
+        <mat-form-field appearance="outline">
+          <mat-label>Correo</mat-label>
+          <input matInput placeholder="msilva@esedor.com" required>
+        </mat-form-field>
+      </div>
+    </div>
+    <div>
+      <p class="inline">
+        <mat-form-field appearance="outline">
+          <mat-label>Empresa</mat-label>
+          <input matInput placeholder="Ingresa tu nombre">
+        </mat-form-field>
+      </p>
+      <div class="inline ml-5">
+        <mat-form-field appearance="outline">
+          <mat-label>Teléfono</mat-label>
+          <input matInput type="number" class="example-right-align" placeholder="986 071 815">
+        </mat-form-field>
+      </div>
+    </div>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Requerimientos:</mat-label>
+        <input matInput placeholder="Buenos días, desearía adquirir...">
+      </mat-form-field>
+    </p>
+    <button class="bg-red-500 py-3 px-12 ml-20 rounded-lg text-white">ENVIAR SOLICITUD</button>
+  </div>
 </div>

@@ -1,14 +1,15 @@
 <div class="">
-    <div class="my-3">
-        <h1 class="text-6xl inline">¡Pide una cotización!</h1>
-        <img class="w-8 bg-black rounded-full border border-grey-900 m-3 inline" src="assets/images/vector.png" alt="cerrar" [routerLink]="['/home']"/>
+    <div class="mt-3 grid grid-cols-2 gap-4">
+        <h1 class="text-6xl px-5 inline mat-display-2 flex justify-center">¡Pide una cotización!</h1>
+        <a mat-mini-fab color="primary" [routerLink]="['/']"><img class="inline" src="assets/images/vector.png"
+                alt="cerrar" /></a>
     </div>
-    <div class="bg-red-100 text-center">
-        <div class="inline-block p-5 text-left text-2xl">
+    <div class="bg-red-100 text-center grid grid-cols-2">
+        <div class="inline-block p-5 ml-10 text-left text-xl">
             <p>¿Necesitas una caja a tu medida?</p>
             <p class="text-red-500">Pedidos personalizados a partir de las 500 unidades</p>
         </div>
-        <button class="bg-red-500 py-3 px-5 m-10 rounded-lg text-white inline-block ">¡Personaliza!</button>
+        <button class="bg-red-500 py-3 m-10 mx-60 rounded-lg text-white">¡Personaliza!</button>
     </div>
 </div>
 <div>

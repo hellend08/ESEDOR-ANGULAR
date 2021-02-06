@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'reto-esedor-angular';
   // template:boolean = false;
-  ocultar:string = '';
+ 
 }

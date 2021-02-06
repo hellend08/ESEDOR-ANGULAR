@@ -1,12 +1,45 @@
 <div class="mx-20 my-10">
-    <h2 class="text-2xl"><span class="text-red-500 rounded-full border border-red-500 mx-4 px-2">2</span>Detalles</h2>
-    <img src="assets/images/interrogante.png" alt="icon"><input type="text"/>
-    <img src="assets/images/interrogante.png" alt="icon"><input type="text"/>
-    <img src="assets/images/interrogante.png" alt="icon"><input type="text"/>
-    <p>Tipo de Carton:</p>
+  <h2 class="text-2xl">
+    <span class="text-red-500 rounded-full border border-red-500 mx-4 px-2">2</span>Detalles
+  </h2>
+  <div class="ml-8">
     <img src="assets/images/interrogante.png" alt="icon">
-    <input type="checkbox" name="" id=""><img src="assets/images/liner.png" alt="image">
-    <input type="checkbox" name="" id=""><img src="assets/images/duplex.png" alt="image">
-    <input type="checkbox" name="" id=""><img src="assets/images/foldcote.png" alt="image">
+    <mat-form-field appearance="fill">
+      <mat-label>Acabado</mat-label>
+      <mat-select>
+        <mat-option value="one">Hotstamping</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <img src="assets/images/interrogante.png" alt="icon" class="">
+    <mat-form-field appearance="fill">
+      <mat-label>Material</mat-label>
+      <mat-select>
+        <mat-option value="one">Couche</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <img src="assets/images/interrogante.png" alt="icon" class="">
+    <mat-form-field appearance="fill">
+      <mat-label>Tamaño</mat-label>
+      <mat-select>
+        <mat-option value="one">Medium (20x12x4)</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="ml-8 mt-3">
+    <p>Tipo de Carton:</p>
+    <img src="assets/images/interrogante.png" alt="icon" class="inline">
+    <div class="ml-3 inline">
+      <mat-radio-group>
+        <mat-radio-button value="auto" class="ml-3">
+          <img src="assets/images/liner.png" alt="image">
+        </mat-radio-button>
+        <mat-radio-button value="always" class="ml-5">
+          <img src="assets/images/duplex.png" alt="image">
+        </mat-radio-button>
+        <mat-radio-button value="always" class="ml-5">
+          <img src="assets/images/foldcote.png" alt="image">
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
 </div>
-
