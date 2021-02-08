@@ -23,6 +23,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+
 
 const routes: Routes = [
   { path: 'cotizar', component: SecondViewComponent },
@@ -54,7 +56,8 @@ const routes: Routes = [
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,22 @@
 <header class="px-5 py-10 grid grid-cols-2">
-    <img class="inline mx-20 " src="assets/images/Frame.png" alt="logo">
-    <nav class="px-5 inline">
-        <a mat-button class="">Productos</a>
-        <a mat-button>Sostenibilidad</a>
-        <a mat-button>Nosotros</a>
-        <a mat-button>Contacto</a>
-        <a mat-button>Ayuda</a>
-    </nav>
+  <img class="inline mx-10 md:mx-20" src="assets/images/Frame.png" alt="logo">
+  <nav class="px-5 inline hidden md:block">
+    <a mat-button class="">Productos</a>
+    <a mat-button>Sostenibilidad</a>
+    <a mat-button>Nosotros</a>
+    <a mat-button>Contacto</a>
+    <a mat-button>Ayuda</a>
+  </nav>
+  <div class="example-button-container block md:hidden mx-32 text-white">
+    <button mat-icon-button color="warm" [matMenuTriggerFor]="menu" aria-label="Example icon button with a delete icon">
+      <mat-icon>menu</mat-icon>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <a mat-menu-item>Productos</a>
+        <a mat-menu-item>Sostenibilidad</a>
+        <a mat-menu-item>Nosotros</a>
+        <a mat-menu-item>Contacto</a>
+        <a mat-menu-item>Ayuda</a>
+      </mat-menu>
+    </button>
+  </div>
 </header>

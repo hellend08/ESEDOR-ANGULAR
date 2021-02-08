@@ -1,8 +1,11 @@
-<div class="h-screen container m-auto pb-20" style="background-image: url(assets/images/home.png)" [ngClass]="ocultar">
+<div class="h-screen container m-auto pb-20 md:mx-0" style="background-image: url(assets/images/home-stactic.png)" [ngClass]="ocultar">
   <app-menu></app-menu>
-  <section class="mat-typography text-white py-3 px-5 mt-20 mx-12">
+  <section _ngcontent-gip-c31 class="mat-typography text-white py-3 px-5 mt-20 mx-12 ">
     <h1 class="mat-display-3">Packaging <br />para grandes<br /> ideas</h1>
     <a [routerLink]="['/cotizar']" type="button"
-      class="bg-yellow-400 px-16 py-3  mx-3 rounded text-black">COTIZAR</a>
+      class="bg-yellow-400 rounded text-black px-16 py-3 mx-3">COTIZAR</a>
   </section>
+  <img class="hidden md:block" src="assets/images/box-slow.png" alt="box">
+  <img class="hidden md:block" src="assets/images/box-center.png" alt="">
+  <img class="hidden md:block" src="assets/images/box-rotate.png" alt="">
 </div>

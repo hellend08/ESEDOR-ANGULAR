@@ -2,17 +2,17 @@
   <h2 class="text-2xl">
     <span class="text-red-500 rounded-full border border-red-500 mx-4 px-2">6</span>Contactanos
   </h2>
-  <div class="ml-8 my-5 pb-40">
+  <div class="md:ml-8 my-5 pb-40">
     <p>Solicitar cotización</p>
-    <div >
+    <div>
       <p class="inline">
-        <mat-form-field appearance="outline" class="w-1/4">
+        <mat-form-field appearance="outline" class="md:w-1/4">
           <mat-label>Nombre*</mat-label>
           <input matInput placeholder="Ingresa tu nombre">
         </mat-form-field>
       </p>
-      <div class="example-container inline ml-5">
-        <mat-form-field appearance="outline" class="w-1/4">
+      <div class="example-container inline md:ml-5">
+        <mat-form-field appearance="outline" class="md:w-1/4">
           <mat-label>Correo</mat-label>
           <input matInput placeholder="msilva@esedor.com" required>
         </mat-form-field>
@@ -20,24 +20,25 @@
     </div>
     <div>
       <p class="inline">
-        <mat-form-field appearance="outline" class="w-1/4">
+        <mat-form-field appearance="outline" class="md:w-1/4">
           <mat-label>Empresa</mat-label>
           <input matInput placeholder="Ingresa tu nombre">
         </mat-form-field>
       </p>
-      <div class="inline ml-5">
-        <mat-form-field appearance="outline" class="w-1/4">
+      <div class="inline md:ml-5">
+        <mat-form-field appearance="outline" class="md:w-1/4">
           <mat-label>Teléfono</mat-label>
           <input matInput type="number" class="example-right-align" placeholder="986 071 815">
         </mat-form-field>
       </div>
     </div>
-    <p  >
-      <mat-form-field appearance="outline" class="mx-2 w-1/2" >
+    <p>
+      <mat-form-field appearance="outline" class="md:mx-2 md:w-1/2">
         <mat-label>Requerimientos:</mat-label>
-        <textarea matInput placeholder="Buenos días, desearía adquirir..." class="h-24" ></textarea>
+        <textarea matInput placeholder="Buenos días, desearía adquirir..." class="h-24"></textarea>
       </mat-form-field>
     </p>
-    <button class="bg-red-500 py-5 px-12 ml-24 w-1/3 rounded-lg text-white">ENVIAR SOLICITUD</button>
+    <a href="mailto:msilva@esedor.com"
+      class="bg-red-500 px-5 mx-4 rounded-lg text-white md:w-1/2 md:ml-40 py-5 md:px-12">ENVIAR SOLICITUD</a>
   </div>
 </div>
