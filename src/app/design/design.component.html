@@ -4,18 +4,34 @@
     </h2>
     <div class="ml-8">
         <p>Selecciona un diseño</p>
-        <div layout="row">
-            <mat-grid-list cols="4" rowHeight="3:1" role="listitem">
-                <img src="assets/images/interrogante.png" alt="icon" class="inline">
-                <mat-grid-tile role="listitem"><img src="assets/images/image-drop.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-uno.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-dos.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-tres.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-cuatro.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-cinco.png" alt="icon"></mat-grid-tile>
-                <mat-grid-tile><img src="assets/images/rectangle-seis.png" alt="icon"></mat-grid-tile>
-            </mat-grid-list>
+        
+        <span><img src="assets/images/interrogante.png" alt="icon"></span>
+        <div class="grid grid-cols-8 gap-2 place-items-start ml-3">
+            <a mat-button class="-px-3">
+                <label for="upload-image"><img src="assets/images/image-drop.png" alt="image"></label>
+                <input type="file" name="" id="upload-image" ngClass="hidden"/>
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle.png" alt="image">
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle-uno.png" alt="image">
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle-dos.png" alt="image">
+            </a>
+            <a mat-button class="col-start-1 col-end-2">
+                <img src="assets/images/rectangle-tres.png" alt="image">
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle-cuatro.png" alt="image">
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle-cinco.png" alt="image">
+            </a>
+            <a mat-button>
+                <img src="assets/images/rectangle-seis.png" alt="image">
+            </a>
         </div>
     </div>
 </div>
