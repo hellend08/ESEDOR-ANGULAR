@@ -1,0 +1,32 @@
+#box-slidein {
+    animation: 5s slidein infinite alternate;
+  }
+  @keyframes slidein {
+    from {
+      margin-right: 0%;
+      width: 30%
+    }
+    to {
+      margin-right: 25%;
+      width: 30%;
+    }
+  };
+
+#box-rotate {
+    animation: 7s rotate linear infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes rotate {
+    from {
+          transform: rotate(0deg);
+          width: 13%;
+        }
+    to {
+        transform: rotate(360deg);
+        width: 13%;
+    }
+};
+
+#image-container{
+    overflow: hidden !important;
+};
