@@ -7,13 +7,13 @@
       width: 30%
     }
     to {
-      margin-right: 25%;
+      margin-right: 10%;
       width: 30%;
     }
   };
 
 #box-rotate {
-    animation: 7s rotate linear infinite;
+    animation: 10s rotate linear infinite;
     transform-origin: 50% 50%;
   }
   @keyframes rotate {
@@ -27,6 +27,20 @@
     }
 };
 
+#box-up{
+    animation: 5s up infinite alternate;
+  }
+  @keyframes up {
+    from {
+      margin-bottom: 0%;
+      width: 25%
+    }
+    to {
+      margin-top: 4%;
+      width: 25%;
+    }
+  };
+
 #image-container{
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 };
